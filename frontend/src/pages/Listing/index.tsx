@@ -4,7 +4,7 @@ import Pagination from "components/Pagination";
 
 function Listing() {
 
-    axios.get('hhttp//locaçhost:8080/movies?size=12&page=0')
+    axios.get(`${BASE_URL}/movies?size=12&page=0`)
     .then(response=>{
         console.log(response.data);
     });
